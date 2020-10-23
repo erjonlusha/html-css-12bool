@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* DEBUG:  */
+body [class*="col-"]{
+  border: 1px solid black;
+  /* background-color: pink; */
+  height: 60px;
+}
+[class*="nested-"] {
+  background-color: red;
+  border: 1px solid white;
+  height: 100%
+}
+
+/* Collone */
+.col-1{width: calc((100%/20) * 1);}
+.col-2{width: calc((100%/20) * 2);}
+.col-3{width: calc((100%/20) * 3);}
+.col-4{width: calc((100%/20) * 4);}
+.col-5{width: calc((100%/20) * 5);}
+.col-6{width: calc((100%/20) * 6);}
+.col-7{width: calc((100%/20) * 7);}
+.col-8{width: calc((100%/20) * 8);}
+.col-9{width: calc((100%/20) * 9);}
+.col-10{width: calc((100%/20) * 10);}
+.col-11{width: calc((100%/20) * 11);}
+.col-12{width: calc((100%/20) * 12);}
+.col-13{width: calc((100%/20) * 13);}
+.col-14{width: calc((100%/20) * 14);}
+.col-15{width: calc((100%/20) * 15);}
+.col-16{width: calc((100%/20) * 16);}
+.col-17{width: calc((100%/20) * 17);}
+.col-18{width: calc((100%/20) * 18);}
+.col-19{width: calc((100%/20) * 19);}
+.col-20{width: calc((100%/20) * 20);}
+
+.nested-1{width: calc((100%/20) * 1);}
+.nested-2{width: calc((100%/20) * 2);}
+.nested-3{width: calc((100%/20) * 3);}
+.nested-4{width: calc((100%/20) * 4);}
+.nested-5{width: calc((100%/20) * 5);}
+.nested-6{width: calc((100%/20) * 6);}
+.nested-7{width: calc((100%/20) * 7);}
+.nested-8{width: calc((100%/20) * 8);}
+.nested-9{width: calc((100%/20) * 9);}
+.nested-10{width: calc((100%/20) * 10);}
+.nested-11{width: calc((100%/20) * 11);}
+.nested-12{width: calc((100%/20) * 12);}
+.nested-13{width: calc((100%/20) * 13);}
+.nested-14{width: calc((100%/20) * 14);}
+.nested-15{width: calc((100%/20) * 15);}
+.nested-16{width: calc((100%/20) * 16);}
+.nested-17{width: calc((100%/20) * 17);}
+.nested-18{width: calc((100%/20) * 18);}
+.nested-19{width: calc((100%/20) * 19);}
+.nested-20{width: calc((100%/20) * 20);}
+
+/* UTILITY CLASSES */
+.p_5{ padding: 5px;}
+[class*="col-"], [class*="nested-"] {float:left;}

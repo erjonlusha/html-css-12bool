@@ -1,0 +1,23 @@
+body{
+  font-family: 'Floydian', arial, sans-serif;
+}
+
+.container{
+  position:relative;
+  height: 960px;
+  background-image: url('../img/photoauris170100033.jpg');
+}
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 120px;
+  color: #c00000;
+  font-weight:300;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+[class*="col-"] {
+  box-shadow: 6px -5px 5px 0px rgba(0,0,0,0.4);
+}
